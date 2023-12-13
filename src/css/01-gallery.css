@@ -24,14 +24,31 @@
             background-color: rgba(46, 47, 66, 0.80);
         }
 
-        button {
-            color: #fff !important;
-        }
-
         .sl-counter {
             font-family: 'Montserrat', sans-serif;
             line-height: 1.5;
             letter-spacing: 0.04em;
 
             color: #fff !important;
+        }
+
+        .sl-close {
+            width: 32px !important;
+            height: 32px !important;
+        }
+
+        .close-btn {
+            width: 100%;
+            height: 100%;
+        }
+
+        .sl-prev,
+        .sl-next {
+            width: 24px !important;
+            height: 24px !important;
+        }
+
+        .arrow-btn {
+            width: 100%;
+            height: 100%;
         }
