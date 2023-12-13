@@ -1,0 +1,37 @@
+        body {
+            margin: 24px 0;
+        }
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 24px;
+
+
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .gallery-image {
+            display: block;
+            width: 360px;
+            height: 200px;
+        }
+
+        .sl-wrapper {
+            background-color: rgba(46, 47, 66, 0.80);
+        }
+
+        button {
+            color: #fff !important;
+        }
+
+        .sl-counter {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.5;
+            letter-spacing: 0.04em;
+
+            color: #fff !important;
+        }
