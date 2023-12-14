@@ -81,8 +81,8 @@ gallery.innerHTML = images.reduce((html, { preview, original, description }) => 
 </li>`, '');
 
 
-import simpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
+import simpleLightbox from "simplelightbox";
 
 new simpleLightbox('.gallery a', {
     closeText: `<svg class="close-btn">

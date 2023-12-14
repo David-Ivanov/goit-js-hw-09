@@ -22,11 +22,15 @@ form.addEventListener('input', (event) => {
 });
 
 form.addEventListener('submit', (event) => {
-    event.preventDefault();
+    if (formEmail.value && formMessage.value) {
+        event.preventDefault();
 
-    localStorage.removeItem("feedback-form-state");
-    formEmail.value = '';
-    formMessage.value = '';
+        localStorage.removeItem("feedback-form-state");
+        formEmail.value = '';
+        formMessage.value = '';
 
-    console.log(obj);
+        console.log(obj);
+    } else {
+        alert("Заповніть усі поля");
+    }
 });
