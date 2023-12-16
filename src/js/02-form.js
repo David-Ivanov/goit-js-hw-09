@@ -3,6 +3,7 @@ const formEmail = form.querySelector("input");
 const formMessage = form.querySelector("textarea");
 
 
+
 let obj = JSON.parse(localStorage.getItem("feedback-form-state"));
 
 function setValue({ email, message }) {
@@ -10,8 +11,7 @@ function setValue({ email, message }) {
     formMessage.value = message;
 }
 
-!obj ? obj = {} : setValue(obj);
-
+!obj ? obj = { email: "", message: "" } : setValue(obj);
 
 form.addEventListener('input', (event) => {
     const element = event.target.name;
